@@ -1,7 +1,9 @@
-TypeScript "react-query" Demo
+TypeScript "react-query" as Remote State Demo
 =================================
 
-react-query默认进行3次retry，如果不想要，可以把`retry`设为false
+react-query除了可以包装从远程取数据，它内部还对数据进行了缓存，以及数据改变时自动触发所有使用了该数据的component重新render
+
+所以可以将它包装成一个hook，当作remote state看待
 
 ```
 npm install
